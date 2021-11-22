@@ -6,20 +6,19 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 15;
     public Animator animator;
-
     public float cooldown = 0.19f;
     public float maxTime = 0.5f;
     public int maxCombo = 4;
-    int combo = 0;
-    float lastTime;
-    [HideInInspector] public bool isDeath = false;
     public FixedJoystick fixedJoystick;
     public AttackButtton attackButtton;
     public PlayerState healtPlayer;
     public AudioClip stepSound, swingSound1, swingSound2, swingSound3 ;
     public AudioSource audioSrc;
-
+    [HideInInspector] public bool isDeath = false;
+    int combo = 0;
+    float lastTime;
     bool attack1, attack2, attack3, isRunning;
+    
     void Awake()
     {
         StartCoroutine(Melee());
