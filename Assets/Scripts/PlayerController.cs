@@ -29,7 +29,6 @@ public class PlayerController : MonoBehaviour
     {
         if(isDeath == false)
         {
-            //Movement
             if (Mathf.Abs(fixedJoystick.Horizontal) + Mathf.Abs(fixedJoystick.Vertical) > 0)
             {
                 animator.SetBool("isRunning", true);
