@@ -109,7 +109,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
-    //Attack
     IEnumerator Melee()
     {
         if(isDeath == false)
